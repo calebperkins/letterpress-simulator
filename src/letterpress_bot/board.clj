@@ -1,6 +1,5 @@
 (ns letterpress-bot.board
-  "Functions for viewing/manipulating the color map. The board is a [x y] -> color mapping.")
-
+  "Functions for viewing and updating the tile map.")
 
 (defn defended?
   "True if the given tile is defended and false otherwise."
@@ -14,6 +13,7 @@
     false))
 
 (defn score
+  "Returns the score for the provided player."
   [m player]
   (->> m
        vals
@@ -26,4 +26,4 @@
   This does not validate that the tile sequence forms a legal word.
   "
   [m player tiles]
-  (into m (map #([% player]) tiles)))
+  (into m (map #(vector % player) tiles)))

@@ -47,4 +47,3 @@
       :colors (board/update player tiles)
       :player opponent
       :last-word tiles)))
-

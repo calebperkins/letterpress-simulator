@@ -1,6 +1,6 @@
 # letterpress-bot
 
-FIXME: description
+This is a simulator for the iPhone game Letterpress, written in Clojure. Note that I am **not** affiliated with Letterpress in any way. If you use this to cheat the game or something, then you are a big silly.
 
 ## Installation
 
